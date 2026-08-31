@@ -31,7 +31,8 @@ export let isDraft = (value: any): boolean => !!value && !!value[DRAFT_STATE]
 /** Returns true if the given value can be drafted by Immer */
 /*#__PURE__*/
 export function isDraftable(value: any): boolean {
-	if (!value) return false
+	const notDraftable = !value
+	if (notDraftable) return false
 	return (
 		isPlainObject(value) ||
 		isArray(value) ||
