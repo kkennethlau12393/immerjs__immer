@@ -94,5 +94,6 @@
     "typescript": "^5.0.2",
     "vite": "^6.4.2",
     "vitest": "^3.2.6"
-  }
+  },
+  "packageManager": "yarn@1.22.5"
 }
